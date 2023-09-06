@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-size: x-large;
+        }
+        .checkbox{
+            padding: 5px;
+            margin: 5px;
+        }
+        .input {
+            width: 100%;
+        }
+        span{
+            margin-left: 20px;
+        }
+        .container { 
+          height: 270px;
+          position: relative;
+        }
+        .center {
+          margin: 0;
+          position: absolute;
+          top: 200%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+        }
+        .lastdiv{
+            margin: 20px;
+            width: 100%;
+            background-color: darkgray;
+        }
+        .cancel{
+            margin: 5px 15px 5px 10px;
+            background-color: red;
+            border: 1px solid black;
+            border-radius: 1.5mm;
+            padding: 2px;
+            font-weight: 500px;
+            color: white;
+        }
+        .submit{
+            background-color: rgb(22, 205, 41);
+            color: white;
+            width: 100%;
+            margin: 5px;
+        }
+
+        .imageg{
+			text-align: center;
+			margin: 24px 0 12px 0;
+			position: relative;
+            padding: 50px;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="imageg">
+            <img src="avatar.jpg.avif" alt="image" width="300px" style="border-radius: 50%; margin-left: 70px; ">
+            <br>
+        </div>
+        <div class="center">
+            <form action="">
+                <br>
+                <h2>Username</h2>
+                <input class="input" type="text" placeholder="Enter Username"><h2>Password</h2>
+                <input class="input" type="password" placeholder="Enter Password"><br>
+                <input type="submit" value="Login" class="submit">
+                <input class="checkbox" type="checkbox">Remember me <br>
+                <div class="lastdiv">
+                    <button class="cancel">Cancel</button>
+                    <span>Forgot <a href="">Password?</a></span>
+                </div>
+            </form>
+        </div>
+      </div>
+</body>
+</html>

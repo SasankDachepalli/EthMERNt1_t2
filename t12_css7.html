@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container { 
+            height: 200px;
+            position: relative;
+            border: 3px solid; 
+            }
+
+        .center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+        body{
+            background-color: crimson;
+        }
+        table{
+            background-color: darkmagenta;
+            padding: 10px;
+            /* margin:15% auto 15% auto; */
+            /* margin: 30px; */
+            color: white;
+            /* margin-left: auto;
+            margin-right: auto; */
+            align-items: center;
+        }
+        td, th{
+            padding: 10px 50px;
+        }
+        .submit{
+            border-radius: 5mm;
+            background-color: white;
+            width:450px;
+            height:40px;
+            font-size: x-large;
+            font-weight: 600;
+            padding: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="conatiner">
+        <div class="center">
+            <form action="" >
+                <table>
+                    <tr><td>Name:</td><td><input type="text" placeholder="your name"></td></tr>
+                    <tr><td>Email:</td><td><input type="text" placeholder="your email"></td></tr>
+                    <tr><td>Password:</td><td><input type="password"></td></tr>
+                    <tr><td>Phone Number:</td><td><input type="text"></td></tr>
+                    <tr><td>Gender:</td>
+                        <td> 
+                            Male:<input type="radio" name="gender" value="male">
+                            Female:<input type="radio" name="gender" value="female">
+                            Other:<input type="radio" name="gender" value="other">
+                        </td>
+                    </tr>
+                    <tr><td>language:</td><td>
+                        <select name="language" id="language">
+                            <option value="choose">select language</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                            <option value="Kannada">Kannada</option>
+                            <option value="Malayalam">Malayalam</option>
+                        </select>
+                    </td></tr>
+                    <tr><td>Zip Code:</td><td><input type="text"></td></tr>
+                    <tr><td>About:</td><td><textarea name="about" id="about" cols="30" rows="4" placeholder="Write about yourself....."></textarea></td></tr>
+                    <tr><td colspan="2"><input type="submit" value="Register" class="submit" ></td></tr>
+                </table>
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
